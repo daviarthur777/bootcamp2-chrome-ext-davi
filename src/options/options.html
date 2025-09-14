@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Opções — Bootcamp Helper</title>
+  <link rel="stylesheet" href="../styles/global.css" />
+</head>
+<body>
+  <div style="padding:18px;max-width:720px;margin:auto">
+    <h1>Opções</h1>
+    <p>Aqui você pode ver opções da extensão.</p>
+    <label>
+      <input id="showBadge" type="checkbox" /> Mostrar badge?
+    </label>
+
+    <script>
+      const cb = document.getElementById('showBadge');
+      chrome.storage.local.get(['showBadge'], (r)=>{ cb.checked = !!r.showBadge });
+      cb.addEventListener('change', ()=> chrome.storage.local.set({ showBadge: cb.checked }));
+    </script>
+  </div>
+</body>
+</html>
