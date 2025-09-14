@@ -1,6 +1,6 @@
 # bootcamp2-chrome-ext-davi
 
-Extensão Chrome (Manifest V3) de exemplo para o Bootcamp II. Feita para Davi — inclui popup, service worker, content script e docs para GitHub Pages.
+Extensão Chrome (Manifest V3) para o Bootcamp II. inclui popup, service worker, content script e docs para GitHub Pages.
 
 ## Como usar
 
